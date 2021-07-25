@@ -1,0 +1,36 @@
+2021-07-25 02:07:16 =ERROR REPORT====
+Discarding message {'$gen_cast',{force_event_refresh,#Ref<0.2964327709.377225217.251240>}} from <0.273.0> to <0.695.0> in an old incarnation (1627178594) of this node (1627178827)
+
+2021-07-25 02:07:16 =ERROR REPORT====
+Discarding message {'$gen_cast',{force_event_refresh,#Ref<0.2964327709.377225217.251240>}} from <0.273.0> to <0.714.0> in an old incarnation (1627178594) of this node (1627178827)
+
+2021-07-25 02:08:13 =ERROR REPORT====
+Discarding message {'$gen_cast',{force_event_refresh,#Ref<0.2555571725.2793668611.231828>}} from <0.273.0> to <0.509.0> in an old incarnation (1627178827) of this node (1627178884)
+
+2021-07-25 02:08:13 =ERROR REPORT====
+Discarding message {'$gen_cast',{force_event_refresh,#Ref<0.2555571725.2793668611.231828>}} from <0.273.0> to <0.512.0> in an old incarnation (1627178827) of this node (1627178884)
+
+2021-07-25 02:10:35 =ERROR REPORT====
+Discarding message {'$gen_cast',{force_event_refresh,#Ref<0.1094588897.2525495298.86661>}} from <0.273.0> to <0.892.0> in an old incarnation (1627178951) of this node (1627179026)
+
+2021-07-25 02:10:35 =ERROR REPORT====
+Discarding message {'$gen_cast',{force_event_refresh,#Ref<0.1094588897.2525495298.86661>}} from <0.273.0> to <0.918.0> in an old incarnation (1627178951) of this node (1627179026)
+
+2021-07-25 02:13:12 =ERROR REPORT====
+Discarding message {'$gen_cast',{force_event_refresh,#Ref<0.3593587.1720975361.118325>}} from <0.273.0> to <0.543.0> in an old incarnation (1627179026) of this node (1627179184)
+
+2021-07-25 02:13:12 =ERROR REPORT====
+Discarding message {'$gen_cast',{force_event_refresh,#Ref<0.3593587.1720975361.118325>}} from <0.273.0> to <0.546.0> in an old incarnation (1627179026) of this node (1627179184)
+
+2021-07-25 02:14:24 =ERROR REPORT====
+Discarding message {'$gen_cast',{force_event_refresh,#Ref<0.406894282.3868196868.198073>}} from <0.273.0> to <0.510.0> in an old incarnation (1627179184) of this node (1627179256)
+
+2021-07-25 02:14:24 =ERROR REPORT====
+Discarding message {'$gen_cast',{force_event_refresh,#Ref<0.406894282.3868196868.198073>}} from <0.273.0> to <0.513.0> in an old incarnation (1627179184) of this node (1627179256)
+
+2021-07-25 03:36:19 =SUPERVISOR REPORT====
+     Supervisor: {<0.700.0>,rabbit_channel_sup}
+     Context:    shutdown_error
+     Reason:     noproc
+     Offender:   [{pid,<0.703.0>},{id,channel},{mfargs,{rabbit_channel,start_link,[1,<0.694.0>,<0.701.0>,<0.694.0>,<<"192.168.32.3:57796 -> 192.168.32.2:5672">>,rabbit_framing_amqp_0_9_1,{user,<<"guest">>,[administrator],[{rabbit_auth_backend_internal,none}]},<<"/">>,[{<<"publisher_confirms">>,bool,true},{<<"exchange_exchange_bindings">>,bool,true},{<<"basic.nack">>,bool,true},{<<"consumer_cancel_notify">>,bool,true},{<<"connection.blocked">>,bool,true},{<<"authentication_failure_close">>,bool,true}],<0.695.0>,<0.702.0>]}},{restart_type,intrinsic},{shutdown,70000},{child_type,worker}]
+

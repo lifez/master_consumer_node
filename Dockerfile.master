@@ -1,0 +1,27 @@
+FROM node:15.3.0-alpine AS Builder
+
+WORKDIR /app
+
+COPY package.json ./
+COPY yarn.lock ./
+# Install app dependencies
+RUN yarn install
+
+
+COPY . .
+
+# Build TypeScript to JavaScript
+RUN yarn build
+
+FROM node:15.3.0-alpine
+
+WORKDIR /app
+
+COPY --from=Builder /app/build/ /app/build
+COPY --from=Builder /app/node_modules /app/node_modules
+COPY --from=Builder /app/package.json /app/package.json
+
+
+# Set the timezone in docker
+# RUN apk --update add tzdata
+# RUN cp /usr/share/zoneinfo/Asia/Bangkok /etc/localtime
